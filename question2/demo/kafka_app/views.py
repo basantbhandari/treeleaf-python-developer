@@ -1,8 +1,8 @@
 from rest_framework import viewsets
 from .models import FaceEmbed
-from .serializers import BookSerializer
+from .serializers import FaceEmbedSerializer
 
 
 class FaceEmbedViewSet(viewsets.ModelViewSet):
     queryset = FaceEmbed.objects.all()
-    serializer_class = BookSerializer
+    serializer_class = FaceEmbedSerializer

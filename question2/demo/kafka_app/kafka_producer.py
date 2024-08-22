@@ -31,7 +31,3 @@ while True:
     producer.send('face.embed.data', value=data)
     print(f"Produced: {data}")
     time.sleep(5)  # Sleep for 5 seconds before sending the next message
-
-# Ensure all messages are sent before closing
-producer.flush()
-producer.close()
